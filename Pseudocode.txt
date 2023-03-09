@@ -1,0 +1,37 @@
+Program Roman:
+
+File Name: Roman.java
+Purpose: To convert a user-inputted integer to its' Roman numeral equivalent and print it out. Given integer must be from 1-3999
+Input: User-inputted integer
+Output: Displays the equivalent Roman numeral in the console.
+
+
+
+0. Define variables
+0.1 input is a scanner object
+0.2 num is an integer
+0.3 valid is a boolean
+
+1. START
+2. Set valid to TRUE
+3. Print: "This program converts integers from 0-3999 to their Roman numeral equivalent. Please enter in a number.
+"
+4. Repeat while valid is TRUE:
+	4.1 num <-- user input integer
+	4.2 Check for validity
+		4.2.1 If 0<num<4000, set valid to FALSE
+		4.2.2 Otherwise keep valid as TRUE
+5. Convert to roman numeral:
+	5.1 Get thousands value by doing num mod 1000
+	5.2 Print "M" for 1000, "MM" for 2000, "MMM" for 3000
+	5.3 Get hundreds value by doing (num mod 1000), then divide by 100.
+	5.4 Print "C" for 100, "CC" for 200, "CCC" for 300, "CD" for 400,  "D" for 500, "DC" for 600, "DCC" for 700, "DCCC" for 800, "CM" for 900
+	5.5 Get tens value by doing (num mod 100), then divide by 10.
+	5.6 Print "X" for 10, "XX" for 20, "XXX" for 30, "XL" for 40, "L" for 50, "LX" for 60, "LXX" for 70, "LXXX" for 80, "XC" for 90
+	5.7 Get ones value by doing num mod 10
+	5.8 Print "I" for 1, "II" for 2, "III" for 3, "IV" for 4, "V" for 5, "VI" for 6, "VII" for 7, "VIII" for 8, "IX" for 9
+6. STOP.
+
+
+Note: for step 5, use either switch cases or possibly string array
+

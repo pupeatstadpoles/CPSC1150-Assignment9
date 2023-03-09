@@ -43,7 +43,7 @@ public class Roman { // Program to convert integer to Roman numeral equivalent
     public static void convert(int n) {
         // empty in index 0 since we will never print index0
         String[] thousands = { "", "M", "MM", "MMM" }; // use n%1000 to get the thousands value
-        String[] hundreds = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCCC", "CM" }; // use (n%1000) to get the hundreds
+        String[] hundreds = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" }; // use (n%1000) to get the hundreds
                                                                                      // value
         String[] tens = { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" }; // use (n%100) to get the tens
                                                                                         // value
